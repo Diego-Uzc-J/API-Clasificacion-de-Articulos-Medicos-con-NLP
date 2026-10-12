@@ -6,6 +6,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.142%2B-green.svg)
 ![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-1.30%2B-orange.svg)
 ![Docker](https://img.shields.io/badge/Docker-Multi--stage-blue)
+[![Render Deploy Status](https://img.shields.io/badge/Render-Live-brightgreen?logo=render)](https://api-clasificacion-de-articulos-medicos.onrender.com/docs)
 
 Solución de Procesamiento de Lenguaje Natural (**NLP**) para la clasificación multietiqueta de artículos médicos en español (cardiovascular, hepatorenal, oncológico, neurológico). Diseñada bajo estrictas restricciones de recursos, optimizada para ejecutarse con alta eficiencia en arquitecturas de CPU limitadas (**Render Free Tier: 512 MB RAM**).
 
@@ -17,11 +18,20 @@ Solución de Procesamiento de Lenguaje Natural (**NLP**) para la clasificación 
 
 * **Clasificación Multietiqueta:** Capacidad de predecir una o múltiples categorías médicas simultáneamente utilizando función sigmoide y umbrales de confianza dinámicos.
 
-* **Despliegue Cloud-Ready:** Contenedor Docker liviano basado en `python:3.10-slim` optimizado para despliegues automáticos en Render y otras plataformas PaaS.
+* **Despliegue Cloud-Ready:** Contenedor Docker liviano basado en `python:3.14-slim` optimizado para despliegues automáticos en Render y otras plataformas PaaS.
 
 * **Calidad y Pruebas Robustas:** Suite completa de pruebas automatizadas mediante `pytest` y `FastAPI TestClient`.
 
 * **Automatización CI/CD:** Workflow integrado en GitHub Actions para ejecución manual de pruebas y validación continua.
+
+---
+
+## 🌐 Enlace en Vivo (Demo)
+
+Puedes probar la API en funcionamiento y consultar su documentación interactiva en los siguientes enlaces desplegados en Render:
+
+* **Documentación Interactiva (Swagger UI):** [https://api-clasificacion-de-articulos-medicos.onrender.com/docs](https://api-clasificacion-de-articulos-medicos.onrender.com/docs)
+* **Documentación Alternativa (ReDoc):** [https://api-clasificacion-de-articulos-medicos.onrender.com/redoc](https://api-clasificacion-de-articulos-medicos.onrender.com/redoc)
 
 ---
 
@@ -84,7 +94,7 @@ La solución está diseñada con una arquitectura desacoplada y liviana para gar
 ## ⚙️ Guía de Instalación y Ejecución Local
 
 ### Prerrequisitos
-* Python 3.10 o superior instalado.
+* Python 3.14 o superior instalado.
 * Git.
 
 ### 1. Clonar el repositorio
